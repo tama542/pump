@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #ff7900;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: smaller;
+}
+
+
+body {
+    background-image: url(pic/gym1.jpg) ;
+    
+}
+
+
+    
+nav ul {
+    list-style-type: none;
+    padding: 30px 20px;
+    background: #444;
+    margin: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+ 
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;   
+}
+
+nav ul li a:hover {
+ transition: width 2s;
+}
+
+main {
+    padding: 1rem;
+    background: #fff;
+    margin: 1rem;
+    border-radius: 10px;
+  
+}
+
