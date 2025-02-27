@@ -55,24 +55,3 @@ function myFunction() {
     }
   }
 
-
-  class Workout {
-    constructor(exercises, duration, difficulty) {
-        this.exercises = exercises;
-        this.duration = duration;
-        this.difficulty = difficulty;
-    }
-
-    displayWorkout() {
-        return `
-            <p>Exercises: ${this.exercises.join(", ")}</p>
-            <p>Duration: ${this.duration} minutes</p>
-            <p>Difficulty: ${this.difficulty}</p>
-        `;
-    }
-}
-
-// Example usage
-const workout1 = new Workout(["Push-ups", "Squats", "Plank"], 30, "Intermediate");
-
-document.getElementById("workoutDisplay").innerHTML = workout1.displayWorkout();
