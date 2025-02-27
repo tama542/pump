@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nutrition.css">
 </head>
 <body>
+
+   <!-- <header>
+        <h1>Welcome to Your Nutrition Journey</h1>
+    </header> -->
+
+    <nav>
+      
+        <ul>
+            <div id="myLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workout.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav> 
+
+    <br><br><br><br>
+    
+
+    <div class="tracker-container">
+        <h2>Nutrition Tracker</h2>
+        <form id="nutritionForm">
+            <label for="mealName">Meal Name:</label>
+            <input type="text" id="mealName" name="mealName" required>
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories" required>
+            <label for="protein">Protein (g):</label>
+            <input type="number" id="protein" name="protein" required>
+            <label for="carbs">Carbs (g):</label>
+            <input type="number" id="carbs" name="carbs" required>
+            <label for="fat">Fat (g):</label>
+            <input type="number" id="fat" name="fat" required>
+            <button type="submit">Add Meal</button>
+        </form>
+        <div id="mealList"></div>
+        <div id="totals">
+            <h3>Daily Totals:</h3>
+            <p>Calories: <span id="totalCalories">0</span></p>
+            <p>Protein: <span id="totalProtein">0</span> g</p>
+            <p>Carbs: <span id="totalCarbs">0</span> g</p>
+            <p>Fat: <span id="totalFat">0</span> g</p>
+        </div>
+    </div>
+
+    <script src="nutrition.js"></script>
+
     
 </body>
 </html>

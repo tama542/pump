@@ -1,0 +1,11 @@
+.workout-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.workout-container h2 {
+    margin-bottom:20px;
+}
