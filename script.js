@@ -46,3 +46,16 @@ innerHTMLdocument.getElementById('contact').innerHTML = `
     <button type="submit">Submit</button>
 </form>
 `;
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+
+  document.getElementById("formButton").addEventListener("click", function() {
+    document.getElementById("myForm").style.display = "block";
+});
