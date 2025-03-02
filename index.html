@@ -11,7 +11,7 @@
 </head>
 <body>
  
-    <nav>
+    <nav class="space-x-4 hidden md:block">
       
         <ul>
             <div id="myLinks">
@@ -21,45 +21,55 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    </nav>
-    <div class=body>
+    </nav> 
+
+   
+    <main class="space-x-4 hidden md:block">
+    <div class=body class="">
         <img src="pic/gym3.jpg" alt="img">
-        <h1>MY FITNESS!</h1>
+        <h1 >MY FITNESS!</h1>
         <h2>Stay Healthy And Fit.</h2>
         <button>Join Now! >></button>
     </div>
+    </main>
     <main>
         <section id="home">
             <h2>Home</h2>
             <p>Start your fitness journey with us. Find workouts, nutrition tips, and more!</p>
         </section>
+
+        <div class="container">
+          <h1>BMI Calculator</h1>
+          <div class="form-group">
+              <label for="weight">Weight (kg):</label>
+              <input type="number" id="weight" placeholder="Enter your weight in kilograms">
+          </div>
+          <div class="form-group">
+              <label for="height">Height (cm):</label>
+              <input type="number" id="height" placeholder="Enter your height in centimeters">
+          </div>
+          <button onclick="calculateBMI()">Calculate BMI</button>
+          <div class="result" id="result"></div>
+      </div>
       
      
     </main>
-
+<!-- 
     <div class="pics">
         <img src="pic/gym1.jpg" alt="">
         <img src="pic/gym2.jpg" alt="">
         <img src="pic/gym4.jpg" alt="">
         <img src="pic/gym5.jpg" alt="">
         <img src="pic/gym6.jpg" alt="">
-        <img src="pic/gym7.jpg" alt="">
-<div class="overlay">
-    <div class="text">More Details here </div>
-</div>
-
-    </div>
+        <img src="pic/gym7.jpg" alt=""> -->
 
   
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with us for personalized fitness advice.</p>
     </section>
 
 
-    <footer class="footer">
-        <div class="footer-container">
+    <footer class="footer" class="space-x-4 hidden md:block">
+    <div class="footer-container">
   
   
   
@@ -99,7 +109,7 @@
     </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/c96a6230c7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>  
     <script src="script.js"></script>
     
         

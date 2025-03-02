@@ -55,3 +55,10 @@ function myFunction() {
     }
   }
 
+  function calculateBMI() {
+    var weight = document.getElementById("weight").value;
+    var height = document.getElementById("height").value / 100; // convert cm to meters
+    var bmi = weight / (height * height);
+    var resultText = "Your BMI is " + bmi.toFixed(2);
+    document.getElementById("result").innerText = resultText;
+}

@@ -31,6 +31,7 @@ document.getElementById('workoutForm').addEventListener('submit', function(event
             exercises = ['Jogging', 'Jumping Jacks', 'High Knees'];
         } else if (goal === 'flexibility') {
             exercises = ['Stretching', 'Yoga Poses', 'Pilates'];
+        
         }
     } else if (fitnessLevel === 'intermediate') {
         duration = 40;
@@ -56,4 +57,5 @@ document.getElementById('workoutForm').addEventListener('submit', function(event
 
     const workout = new Workout(exercises, duration, difficulty);
     document.getElementById('workoutDisplay').innerHTML = workout.displayWorkout();
-})
+});
+
